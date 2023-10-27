@@ -1,0 +1,20 @@
+def birthday_invite(guest_name,venue="Hotel Leela",day="Nov-01-2023",time="18:00 PM",hostnmae="Aviya"):
+    print (f'''Dear {guest_name},
+        Please come to my birthday party
+        Venue - {venue}
+        Date - {day}
+        Time - {time}
+{hostnmae}
+****************************************
+           
+''')
+
+your_guest=input("Please enter the guests(separated by comma): ")
+#print(your_guest)
+#print(type(your_guest))
+guest_list=your_guest.split(",")
+#print(type(guest_list))
+#print(guest_list)
+
+for guest in guest_list:
+    birthday_invite(guest)
